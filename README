@@ -1,0 +1,21 @@
+Turing machine interpreter in python
+
+accepts programs in format:
+
+<space separated list of acceptable states>
+<state> <symbol> <new_state> <new_symbol> <direction>
+...
+
+#style comments are supported
+empty lines are ignored
+
+
+states are represented as integers,
+symbols are any ASCII character not matching [_\s]
+
+TODO:
+* limit number of steps
+* limit memory usage
+* add support for 4-th syntax
+* support syntax from http://matinf.vsgao.com/simulator/tm.html
+
