@@ -19,7 +19,7 @@ if __name__ == "__main__":
   data = sys.stdin.readline().rstrip()
   
   f = open(sys.argv[1],'r')
-  reader = (line for line in (line[:line.find('#')%(len(line) +1)] for line in f) if line.strip('') != '')
+  reader = (line for line in (line[:line.find('#')%(len(line) +1)].rstrip() for line in f) if line != '')
 
   line = reader.next()
   fields = re.split('\s+', line.rstrip())
