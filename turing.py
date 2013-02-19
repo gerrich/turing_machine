@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-_name = 'Turing Machine'
+_name = 'TuringMachine'
 _version = '0.01'
 
 from TuringMachine import *
